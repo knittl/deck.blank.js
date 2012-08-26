@@ -1,0 +1,11 @@
+.deck-container.deck-blank * {
+	visibility:hidden;
+}
+
+.deck-container.deck-blank.deck-blank-black {
+	background-color:#000;
+}
+
+.deck-container.deck-blank.deck-blank-white {
+	background-color:#fff;
+}

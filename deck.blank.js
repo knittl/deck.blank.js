@@ -57,6 +57,7 @@ a class on the deck container.
 		var opts = $[deck]('getOptions');
 
 		$d.unbind('keydown.deckblank').bind('keydown.deckblank', function(e) {
+			if (e.ctrlKey) return;
 			if (e.which === opts.keys.black || $.inArray(e.which, opts.keys.black) > -1) {
 				$[deck]('toggleBlank', 'black');
 				e.preventDefault();
